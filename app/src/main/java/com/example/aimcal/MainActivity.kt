@@ -15,11 +15,11 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.btn1)
         button.setOnClickListener {
 
-            clickDatePickerButton()
+            clickDatePicker()
         }
     }
 
-    private fun clickDatePickerButton() {
+     fun clickDatePicker() {
 
         val myCalendar = Calendar.getInstance()
         val year = myCalendar.get(Calendar.YEAR)
@@ -27,14 +27,9 @@ class MainActivity : AppCompatActivity() {
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
 
 
-        DatePickerDialog(
-            this,
-            DatePickerDialog.OnDateSetListener { view, year, month, dayofmonth ->},
-            Toast.makeText(this, "Button is just clicked", Toast.LENGTH_LONG).show()
-            view,
-            year,
-            month,
-            day).show()
+        DatePickerDialog(this, DatePickerDialog.OnDateSetListener{view,year,month,dayofmonth-> },
+            year,month,day
+        )
 
     }
 }
