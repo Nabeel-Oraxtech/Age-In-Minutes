@@ -52,6 +52,7 @@
         android:textSize="18sp" />
 
     <TextView
+        android:id="@+id/tvDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -72,6 +73,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/showMinutes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -85,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Selected Date"
+        android:text="Age in Minutes"
         android:textColor="@color/lightgrey"
         android:textColorHint="#3F51B5"
         android:textSize="20sp"
